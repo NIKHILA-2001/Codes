@@ -18,19 +18,19 @@ m=len(1st [0])
 for i in range(n):
   for j in range (m-4+1):
     if len(set([lst[i][j],lst[i][j+1],lst[i][j+2],lst[i][j+3]]))==1: 
-      out.append(1st[i][j])
+      out.append(lst[i][j])
 for j in range(m):
   for i in range(n-4+1):
-    if len(set([lst[i][j],lst[i+1][j],lst[i+2][j],lst[i+][j]]))==1:
-      out.append(1st [i][j])
+    if len(set([lst[i][j],lst[i+1][j],lst[i+2][j],lst[i+3][j]]))==1:
+      out.append(lst [i][j])
 for i in range(n-4+1):
   for j in range (m-4+1):
-    if len(set([lst[i][j],lst[i+1][j+1],1st[i+2][j+2],lst[i+3][j+3]]))==1: 
-      out.append (1st[i][j])
+    if len(set([lst[i][j],lst[i+1][j+1],lst[i+2][j+2],lst[i+3][j+3]]))==1: 
+      out.append (lst[i][j])
 for i in range(n-4+1):
   for j in range (m-1,2,-1):
     if len(set([lst[i][j],lst[i+1][j-1],lst[i+2][j-2],lst[i+3][j-3]]))==1: 
-      out.append(1st [i][j])
+      out.append(lst [i][j])
 
 if len(out)==0:
   print("-1")
